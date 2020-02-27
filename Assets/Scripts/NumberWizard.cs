@@ -21,15 +21,14 @@ public class NumberWizard : MonoBehaviour
     void StartGame()
     {
 
-        guess = (min + max) / 2;
-        guessText.text = guess.ToString();
+        NextGuess();
 
     }
 
 
     void NextGuess()
     {
-        guess = (min + max) / 2;
+        guess = Random.Range(min, max+1);
         guessText.text = guess.ToString();
     }
     public void OnPressHigher()

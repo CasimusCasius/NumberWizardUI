@@ -22,7 +22,7 @@ public class NumberWizard : MonoBehaviour
     {
 
         NextGuess();
-
+        max += 1;
     }
 
 
@@ -39,10 +39,8 @@ public class NumberWizard : MonoBehaviour
 
     public void OnPressLower()
     {
-        if (guess > 1)
-            max = guess - 1;
-        else
-            max = guess;
+        
+        max = guess -1 ;
         NextGuess();
     }
 }
